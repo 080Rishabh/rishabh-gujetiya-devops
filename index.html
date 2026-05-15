@@ -1171,7 +1171,7 @@ function animCount(el, target, dur=1200) {
 const statsObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
-      const nums = [['1', '+'], ['50', '+'], ['5', '+'], ['760', '+']];
+      const nums = [['2', '+'], ['5', '+'], ['760', '+']];
       document.querySelectorAll('.stat-num').forEach((el, i) => {
         const n = parseInt(nums[i][0]);
         el.dataset.suffix = nums[i][1];
